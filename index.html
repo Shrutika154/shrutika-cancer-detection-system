@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Breast Cancer Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    
+
+    <!-- ===== Main Heading Section ===== -->
+    <div class="heading-section">
+        <h1>Breast Cancer Detection System</h1>
+        <p>AI-powered prediction using top medical features</p>
+    </div>
+
+    <!-- ===== Input Form Container ===== -->
+    <div class="container">
+
+        <div class="input-group">
+            <label><i class="fa-solid fa-arrows-left-right"></i> Worst Perimeter:</label>
+            <input id="f1" type="number">
+        </div>
+
+        <div class="input-group">
+            <label><i class="fa-solid fa-circle"></i> Worst Radius:</label>
+            <input id="f2" type="number">
+        </div>
+
+        <div class="input-group">
+            <label><i class="fa-solid fa-chart-line"></i> Worst Concave Points:</label>
+            <input id="f3" type="number">
+        </div>
+
+        <div class="input-group">
+            <label><i class="fa-solid fa-dna"></i> Worst Area:</label>
+            <input id="f4" type="number">
+        </div>
+
+        <div class="input-group">
+            <label><i class="fa-solid fa-vial"></i> Worst Concavity:</label>
+            <input id="f5" type="number">
+        </div>
+
+        <div class="input-group">
+            <label><i class="fa-solid fa-eye"></i> Mean Concave Points:</label>
+            <input id="f6" type="number">
+        </div>
+
+        <div class="input-group">
+            <label><i class="fa-solid fa-ruler"></i> Mean Perimeter:</label>
+            <input id="f7" type="number">
+        </div>
+
+        <button onclick="predict()">Predict Result</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <!-- ===== Features Section ===== -->
+    <div class="features-section">
+        <h2><i class="fa-solid fa-star"></i> System Features</h2>
+        <ul>
+            <li>✔ Machine Learning Prediction</li>
+            <li>✔ Uses 7 Most Important Features</li>
+            <li>✔ Fast & Accurate Classification</li>
+            <li>✔ Beautiful Glass UI Interface</li>
+            <li>✔ Smooth Animations & Icons</li>
+            <li>✔ Real-time Prediction Output</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

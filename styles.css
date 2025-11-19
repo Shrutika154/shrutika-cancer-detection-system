@@ -1,0 +1,160 @@
+/* ===== GLOBAL PAGE STYLE ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    /* Background Image (LOCAL FILE) */
+    background: url("cancer1.png") no-repeat center center fixed;
+    background-size: cover;
+
+    position: relative;
+}
+
+/* Dark overlay for readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.45); /* Soft dark overlay */
+    z-index: -1;
+}
+
+
+/* ===== MAIN HEADING ===== */
+
+.heading-section {
+    text-align: center;
+    color: #ffe0f3;
+    margin-top: 30px;
+    text-shadow: 0 4px 10px rgba(240, 8, 229, 0.4);
+}
+
+.heading-section h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.heading-section p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+
+/* ===== FORM CONTAINER (Glass Effect) ===== */
+
+.container {
+    width: 420px;
+    margin: 40px auto;
+    padding: 28px;
+
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.35);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+/* ===== INPUT FIELDS ===== */
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #55cfff;
+    box-shadow: 0 0 8px #55ddff;
+}
+
+
+/* ===== BUTTON ===== */
+
+button {
+    width: 100%;
+    padding: 12px;
+
+    background: linear-gradient(135deg, #22c0ff, #008bcc);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff66c4, #e60073);
+    transform: translateY(-3px);
+}
+
+
+/* ===== RESULT TEXT ===== */
+
+#result {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #ffffff;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+
+/* ===== FEATURES SECTION ===== */
+
+.features-section {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto 60px auto;
+    padding: 20px;
+
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+
+    color: #ffe6f7;
+}
+
+.features-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: #ffb3dd;
+}
+
+.features-section ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.features-section ul li {
+    font-size: 17px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+.features-section ul li:last-child {
+    border-bottom: none;
+}
